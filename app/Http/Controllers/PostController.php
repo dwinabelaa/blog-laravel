@@ -14,4 +14,12 @@ class PostController extends Controller
             "postss" => Post::all()
         ]);
     }
+
+    public function show($slug)
+    {
+        return view('post', [
+            "title" => "Single Post",
+            "item" => Post::find($slug)
+        ]);
+    }
 }
