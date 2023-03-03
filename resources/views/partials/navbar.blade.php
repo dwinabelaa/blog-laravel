@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/style.css">
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid ms-5 me-5">
-        <a class="navbar-brand" href="/">Bela Blog</a>
+        <a class="navbar-brand" href="/">Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,6 +16,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ $title === 'Posts' ? 'active' : '' }}" href="/blog">Blog</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/login" class="nav-link {{ $title === 'Login' ? 'active' : '' }}"><i
+                            class="bi bi-box-arrow-in-right"></i> Login</a>
                 </li>
             </ul>
         </div>
